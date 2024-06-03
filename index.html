@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>SwiftyCoin</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.png" />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/plugins/feature.css" />
+    <link rel="stylesheet" href="assets/css/vendor/slick.css" />
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/vendor/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/roadmap.css" />
+  </head>
+  <style>
+    .slider-wrapper {
+      padding-bottom: 10%;
+      background-image: url("./assets/bg1.png");
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100vh;
+    }
+
+    .inner {
+      margin-top: 10%;
+    }
+
+    .title {
+      font-size: 60px;
+      margin-top: 10px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      width: 300px;
+      margin: auto;
+    }
+
+    .btn-default {
+      margin-top: 12px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 40px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        width: 100%;
+      }
+
+      .inner {
+        margin-top: 20%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 30px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .inner {
+        margin-top: 30%;
+      }
+    }
+
+    .service-area {
+      padding-top: 120px;
+      padding-bottom: 120px;
+      background-color: #f9f9f9;
+    }
+
+    .section-title .title {
+      font-size: 36px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+
+    .section-title p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .section-title .title {
+        font-size: 28px;
+      }
+
+      .section-title p {
+        font-size: 16px;
+      }
+
+      .service-area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-title .title {
+        font-size: 24px;
+      }
+
+      .section-title p {
+        font-size: 14px;
+      }
+
+      .service-area {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+  </style>
+  <body>
+    <div class="active-dark">
+      <!-- start header Arae -->
+      <header
+        class="header-area formobile-menu header--transparent"
+        style="
+          background-image: url('./assets/bg1.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-attachment: fixed;
+        "
+      >
+        <div class="header-wrapper" id="header-wrapper">
+          <div class="header-left">
+            <div class="logo">
+              <a href="/"
+                ><img
+                  src="assets/logo.png"
+                  alt="RedditCoin"
+                  style="width: 50px"
+              /></a>
+            </div>
+          </div>
+          <div class="header-right">
+            <nav class="mainmenunav d-none d-md-block">
+              <ul class="mainmenu">
+                <li><a href="#about">About $BPT</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <!-- <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#join">Join Us</a></li> -->
+                <!-- <li><a href="#community">Community</a></li>                           -->
+              </ul>
+            </nav>
+
+            <div class="header-btn">
+              <a class="btn-default btn-border btn-opacity" href="#">
+                <span>Get BPT</span>
+              </a>
+            </div>
+
+            <div class="humberger-menu d-block d-lg-none pl--20 pl_sm--10">
+              <span class="menutrigger text-white">
+                <i data-feather="menu"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End header Arae -->
+      <!-- Start Popup Menu Area  -->
+      <div class="rn-popup-mobile-menu">
+        <div class="inner">
+          <div class="popup-menu-top">
+            <div class="logo">
+              <a href="index.html"><img src="assets/logo.png" alt="" /></a>
+            </div>
+            <div class="close-menu d-block d-lg-none">
+              <span class="closeTrigger">
+                <i data-feather="x"></i>
+              </span>
+            </div>
+          </div>
+          <ul class="mainmenu">
+            <li><a href="#about">About $BPT</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Popup Menu Area  -->
+
+      <!-- start Slider area -->
+      <div class="slider-wrapper">
+        <div class="slider-activation animated fadeInDown">
+          <div
+            class="slide slide-style-1 d-flex align-items-center bg_image bg_image--1"
+            data-black-overlay="8"
+          >
+            <div class="container position-relative">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="inner">
+                    <!-- <img src="assets/logopng.png" width="200px" class="logo" alt="logo" data-aos="fade-down-right" data-aos-duration="1000" /> -->
+                    <h1
+                      class="title"
+                      data-aos="fade-down-right"
+                      data-aos-duration="1000"
+                    >
+                      BeePT
+                    </h1>
+                    <br />
+                    <div>
+                      <h3
+                        class="subtitle"
+                        data-aos="fade-down-right"
+                        data-aos-duration="1000"
+                      >
+                        BeePT is a revolutionary platform designed to empower
+                        individuals with the knowledge and tools to understand
+                        and effectively utilize artificial intelligence (AI).
+                      </h3>
+                    </div>
+                    <a class="btn-default size-md" href="#"
+                      >Get Your BeePT Now!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end Slider Area -->
+
+      <!-- start about area -->
+      <div
+        class="about-area ptb--120 bg_color--5"
+        id="about"
+        style="background-color: #011b33; color: black"
+      >
+        <div class="about-wrapper">
+          <div class="container">
+            <div class="row row--35 align-items-center">
+              <div class="col-lg-5 col-md-12">
+                <div class="thumbnail">
+                  <img
+                    class="w-100"
+                    src="assets/logo.png"
+                    alt="RedditCoin icon png"
+                    data-aos="zoom-out-right"
+                    data-aos-duration="1000"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-12">
+                <div class="about-inner inner">
+                  <div class="section-title">
+                    <h2 class="title">BPT .</h2>
+                    <p
+                      class="description"
+                      style="color: aliceblue; font-size: 24px"
+                      data-aos="zoom-out-right"
+                      data-aos-duration="1000"
+                    >
+                      BeePT (BPT) is a utility token on the Solana blockchain
+                      that supports a platform dedicated to making artificial
+                      intelligence accessible and understandable for everyone.
+                      Our mission is to break down the barriers to AI adoption
+                      by offering an array of resources, including tutorials,
+                      guides, and practical tools that simplify the learning
+                      process and application of AI in various fields. 
+                    </p>
+                    <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End about area -->
+
+      <!-- start Services Area -->
+      <!-- End Services Area -->
+
+      <div
+        class="service-area ptb--120 flash text-center"
+        id="tokenomics"
+
+        style="
+        background-image: url('./assets/bg1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      "
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title text-center">
+                <!-- <span class="subtitle"></span> -->
+                <p>
+                  Visual representation of how $BeePT tokens are
+                  distributed.
+                </p>
+              </div>
+              <div>
+                <h2>Unlock the Secrets of  BeePT !</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-12 mt--30">
+              <div class="row service-main-wrapper justify-content-center">
+                <!-- start single Services -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    class="service service__style--2 text-left animated fadeInUp"
+                  >
+                    <div class="content text-center">
+                      <h3 class="theme-gradient">Token Name</h3>
+                      <p>BeePT  (BPT)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    class="service service__style--2 text-left animated fadeInUp"
+                    data-aos-duration="1000"
+                    data-aos="fade-right"
+                  >
+                    <div
+                      class="content text-center"
+                      data-aos-duration="1000"
+                      data-aos="fade-right"
+                    >
+                      <h3 class="title theme-gradient">Total Supply</h3>
+                      <p>1,000,000,000 $BPT</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End single Services -->
+
+                <!-- start single Services -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    class="service service__style--2 text-left animated fadeInUp"
+                    data-aos-duration="1000"
+                    data-aos="fade-right"
+                  >
+                    <div
+                      class="content text-center"
+                      data-aos-duration="1000"
+                      data-aos="fade-right"
+                    >
+                      <h3 class="title theme-gradient">Reward Mechanism</h3>
+                      <p>rewarded with BPT tokens.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End single Services -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    class="service service__style--2 text-left animated fadeInUp"
+                    data-aos-duration="1000"
+                    data-aos="fade-right"
+                  >
+                    <div
+                      class="content text-center"
+                      data-aos-duration="1000"
+                      data-aos="fade-right"
+                    >
+                      <h3 class="title theme-gradient">
+                        50% for community rewards
+                      </h3>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- start single Services -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    class="service service__style--2 text-left animated fadeInUp"
+                  >
+                    <div
+                      class="content text-center"
+                      data-aos-duration="1000"
+                      data-aos="fade-right"
+                    >
+                      <h3 class="title theme-gradient">25% for liquidity</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- End single Services -->
+
+                <!-- start single Services -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    class="service service__style--2 text-left animated fadeInUp"
+                    data-aos-duration="1000"
+                    data-aos="fade-right"
+                  >
+                    <div class="content text-center">
+                      <h3
+                        class="title theme-gradient"
+                        data-aos-duration="1000"
+                        data-aos="fade-right"
+                      >
+                        20% for development
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- End single Services -->
+                <!-- start single Services -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    class="service service__style--2 text-left animated fadeInUp"
+                    data-aos-duration="1000"
+                    data-aos="fade-right"
+                  >
+                    <div class="content text-center">
+                      <h3
+                        class="title theme-gradient"
+                        data-aos-duration="1000"
+                        data-aos="fade-right"
+                      >
+                        5% for marketing
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- End single Services -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start Roadmap Area -->
+    
+
+ 
+
+      <!-- Donation Section Start -->
+      <div class="service-area ptb--120 bg_color--1" id="join">
+        <div class="container animated fadeInLeft">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title text-center">
+                 <p>
+                  You're looking to enhance your productivity, make informed decisions, or simply explore the fascinating world of AI, BeePT provides the resources you need to succeed.
+                </p>
+                <div class="icon">
+                  <a href="https://discord.com/invite/ck5Eb4jN" target="_blank"
+                    ><i
+                      class="fab fa-discord fa-3x"
+                      style="color: #0088cc"
+                    ></i>
+                  </a>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  <a href=" https://x.com/beepttoken" target="_blank"
+                    ><i class="fab fa-twitter fa-3x" style="color: #8f8b8b"></i>
+                  </a>
+                </div>
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community section -->
+      <style>
+        .im_counterup .inner .counter::after {
+          display: none;
+        }
+      </style>
+
+      <!-- start footer area -->
+      <footer
+        class="footer-area footer-style-01 bg_color--1"
+        style="
+          background-image: url('./assets/bg1.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-attachment: fixed;
+          padding: 5%;
+        "
+      >
+        <div class="footer-wrapper ptb--70">
+          <div class="container">
+            <div class="row">
+              <div class="ft-text">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo" />
+                    <span class="theme-gradient"></span>
+                  </a>
+                </div>
+                <p class="text-white">
+                  Copyright © 2024
+                  <a href="/" style="color: aqua">BeePT Coin</a> All rights
+                  reserved.<br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer area -->
+      <!-- Start Back To Top Start -->
+      <div class="backto-top">
+        <div>
+          <i data-feather="chevron-up"></i>
+        </div>
+      </div>
+      <!-- Start Back To Top End -->
+    </div>
+    <!-- js  
+======================================-->
+    <!-- modernizer JS -->
+    <script src="assets/js/vendor/modernizer.min.js"></script>
+    <!-- jquery JS -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <script src="assets/js/vendor/avoid-console.js"></script>
+    <script src="assets/js/vendor/waypoint.js"></script>
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/feather.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/counterup.js"></script>
+    <script src="assets/js/vendor/video.js"></script>
+    <script src="assets/js/vendor/masonry.js"></script>
+    <script src="assets/js/vendor/lightbox.js"></script>
+    <script src="assets/js/vendor/particles.js"></script>
+    <script src="assets/js/vendor/contactform.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- main JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
